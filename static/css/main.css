@@ -1,0 +1,21 @@
+body{
+    margin: 0 auto;
+    background-color: limegreen;
+    color: red;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+.content{
+    margin: 0 auto;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+}
+table,td{
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+}
