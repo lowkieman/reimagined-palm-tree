@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0 auto;
+    padding: 0;
+    text-transform: capitalize;
+    background-color: lime;
+}
