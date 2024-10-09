@@ -5,11 +5,15 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: greenyellow;
 }
 
 h1{
     margin: 0 auto;
     padding: 0;
     text-transform: capitalize;
-    background-color: lime;
+    background-image: linear-gradient(30deg, red, green, blue);
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
 }
