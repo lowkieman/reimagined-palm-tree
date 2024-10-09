@@ -1,14 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>learning flask</title>
-    <link rel="stylesheet" href="static/css/index.css">
-    <link rel="icon" href="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1msDTq.img">
-</head>
-<body>
-    <h1>learning flask</h1>
-    
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block head %}
+<title>learning flask</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>task master</h1>
+    <table>
+        <thead>
+            <th>task</th>
+            <th>added</th>
+            <th>actions</th>
+        </thead>
+        {% for task in tasks %}
+        <tbody>
+            <tr>
+                <td>{{ task.content}} </td>
+                <td>{{ task.date_created.date() }} </td>
+                <td>
+                    <a href="">Update</a>
+                    <a href="">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+        {% endfor %}
+
+    </table>
+
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content" placeholder="Task you task here...">
+        <input type="submit" id="submit" value="Add Task">
+    </form>
+</div>
+{% endblock %}

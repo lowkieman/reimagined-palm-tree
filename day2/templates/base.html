@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
     <link rel="stylesheet" href="static/css/index.css">
+    {% block head %}{% endblock %}
 </head>
 <body>
-    <h1>login form</h1>
-    <form action="">
-        <input type="text" name="username" id="username">
-        <input type="submit" value="Submit">
-    </form>
+    {% block body %}{% endblock %}
 </body>
 </html>
